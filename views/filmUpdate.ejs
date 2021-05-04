@@ -1,0 +1,18 @@
+<h1>Modifier la fiche du film : " <%= nomdufilm %> "</h1>
+<form action="/film/update" method="POST">
+
+Nom du film : <%= nomdufilm %>
+<input type="hidden" name="nomdufilm" value="<%= nomdufilm %>" /><br />
+Réalisateur : 
+<input type="text" name="realisateur" value="<%= realisateur %>" /><br />
+Acteurs : 
+<input type="text" name="acteur" value="<%= acteur %>" /><br />
+Synopsis :
+<input type="text" name="synopsis" value="<%= synopsis %>" /><br />
+Note sur 5 : 
+<input type="number" min="0" max="5" name="note" value="<%= note %>" required /><br />
+Commentaire :
+<input type="text" name="commentaire" value="<%= commentaire %>" /><br />
+<input type="submit" name="save" value="Sauver" /><br />
+<input type="submit" value="retour à la liste" formaction="/film" />
+</form>

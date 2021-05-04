@@ -1,0 +1,20 @@
+<h1>Fiche du film : " <%= nomdufilm %> "</h1>
+
+
+Nom du film : 
+<p name="nomdufilm" ><%= nomdufilm %></p>  <br />
+
+Réalisateur : 
+<p name="realisateur"><%= realisateur %></p>  <br />
+Acteurs : 
+<p name="acteur"><%= acteur %></p> <br />
+Synopsis :
+<p name="synopsis"><%= synopsis %></p> <br />
+Note sur 5 : 
+<p name="note" ><%= note %></p> <br />
+Commentaire : 
+<p name="commentaire"><%= commentaire %></p> <br />
+
+<form>
+<input type="submit" value="retour à la liste" formaction="/film" />
+</form>

@@ -1,0 +1,55 @@
+body{
+	background-color: rgb(51,153,255);
+	text-align: center;
+}
+
+h1{
+	text-align: center;
+	color: white;
+}
+nav{
+    display: flex;
+    width: 75%;
+    justify-content: space-around;
+    margin: auto;
+    background-color: rgb(255,102,102);
+    border-radius: 10px;
+    padding: 2px;
+}
+a{
+	color: white;
+	display: inline-flex;
+	justify-content: space-around;
+}
+p{
+	color: white;
+	margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+h2{
+	color: white;
+}
+#coordonnées{
+	border: 2px solid rgb(255,102,102);
+    padding: 5px;
+    width: max-content;
+    margin: auto;
+   
+}
+form{
+	border: 2px solid rgb(255,102,102);
+	padding: 5px;
+	margin: auto;
+	width: min-content;
+	color: white;
+}
+input{
+	padding: 1px;
+}
+
+@media (max-width : 800px) {
+    p, h1, h2, nav{
+        font-size: small;
+    }
+    }

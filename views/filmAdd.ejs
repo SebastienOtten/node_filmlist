@@ -1,0 +1,22 @@
+<h1>Ajouter une fiche de film</h1>
+
+<form action="/film" method="POST">
+Nom du film : 
+<input type="text" name="nomdufilm" value="" placeholder="Titanic" autofocus required/><br />
+Réalisateur : 
+<input type="text" name="realisateur" value="" placeholder="James Cameron"/><br />
+Acteurs : 
+<input type= "text" name="acteur" value="" placeholder="Leonardo DiCaprio"/><br />
+Synopsis :
+<input type="text" name="synopsis" value="" placeholder="C'est l'histoire d'un paquebot qui ne devait pas couler ..."/><br />
+Note sur 5 : 
+<input type="number" min="0" max="5" name="note" value="" placeholder="4" required/><br />
+Commentaire : 
+<input type="text" name="commentaire" value="" placeholder="J'ai beaucoup aimé ce film"><br/>
+
+<input type="submit" name="save" value="Sauver" /><br />
+</form>
+
+<form action="/film">
+<button type="submit" value="" >Retour à la liste</button> <br>
+</form>
