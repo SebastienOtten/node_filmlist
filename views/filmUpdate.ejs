@@ -11,6 +11,15 @@ Synopsis :
 <input type="text" name="synopsis" value="<%= synopsis %>" /><br />
 Note sur 5 : 
 <input type="number" min="0" max="5" name="note" value="<%= note %>" required /><br />
+Catégorie :
+<select name="nomcategorie" value="<%= nomcategorie %>">
+    <option value="Action">Action</option>
+    <option value="Drame">Drame</option>
+    <option value="Comedie">Comédie</option>
+    <option value="Horreur">Horreur</option>
+    <option value="Romance">Romance</option>
+    <option value="Thriller">Thriller</option>
+    </select><br />
 Commentaire :
 <input type="text" name="commentaire" value="<%= commentaire %>" /><br />
 <input type="submit" name="save" value="Sauver" /><br />

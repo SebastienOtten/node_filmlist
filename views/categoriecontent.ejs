@@ -1,0 +1,12 @@
+<h1>Films de cette categorie </h1>
+<ul>
+    <% for (let i = 0; i < filmlist.length; i++) { %>
+        <li>
+            <p><%= filmlist[i].nomdufilm %> </p>
+            <a href="/film/consult/<%= filmlist[i].nomdufilm %>">Consulter</a>
+        </li>
+        <% } %>  
+</ul>
+<form action="">
+    <input type="submit" value="retour à la liste" formaction="/film" />
+    </form>
